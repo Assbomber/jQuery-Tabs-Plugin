@@ -12,7 +12,7 @@ A single method that creates all that is required. Below are bunch of parameters
 | (Array<String>) tabs  | expects an array of tab names, |
 | (Array<String>) tabContents  | expects and array of content. Remember to parse HTML as a string incase using HTML as content |
 | (boolean) userTabSwitchEnabled  | defines the plugin whether the end user is allowed to switch tabs |
-| (String) float  | defines the location tab navigator. Accepted values: "top","left","right". By default is set to "top" |
+| (String) float  | defines the location of tab navigator. Accepted values: "top","left","right". By default is set to "top" |
 | (int) width  | defines the max width |
 
 ### next()
@@ -26,7 +26,7 @@ Jump to previous tab.
 ### Attach required files
 Link the styles.css and tabsPlugin.js in your index.html
 ### Create a div
-Create a <div> and provide it an id.
+Create a div and provide it an id.
 ```sh
 <div id="tabs"></div>
 ```
