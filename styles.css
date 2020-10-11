@@ -1,0 +1,48 @@
+.active{
+  box-shadow: 0 0 20px white;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin:0 0.5rem 0.5rem 0.5rem;
+}
+.inactive{
+  box-shadow: none;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin:0 0.5rem 0.5rem 0.5rem;
+}
+
+#tabs {
+  display: inline-block;
+  border-style:solid;
+  padding: 0.5%;
+   width: 580px;              /* when top=580 left =700 */
+  height: auto;
+  background-color: #09F;
+  border-radius: 20px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+
+.tab-content{
+  /* max-width: 580px; */
+  border-radius: 20px;
+  padding: 0.5%;
+  background-color: white;
+}
+button{
+  border-radius: 10px;
+  background-color: #09F;
+  color: white;
+  padding: 0.5rem 1.9rem;
+
+}
