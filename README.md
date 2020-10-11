@@ -1,5 +1,5 @@
 # jQuery-Tabs-Plugin
-Helps to easily create tabs
+Helps to easily create tabs. See [DEMO](https://assbomber.github.io/jQuery-Tabs-Plugin)
 
 ## Methods
 
