@@ -1,7 +1,7 @@
 .active{
   box-shadow: 0 0 20px white;
   border-radius: 20px;
-  background-color: blue;
+  background-color: #b8de6f;
   color: white;
   font-size: 1rem;
   display: inline-block;
@@ -10,7 +10,7 @@
 }
 .inactive{
   box-shadow: none;
-  background-color: white;
+  background-color: #f1e189;
   color: black;
   font-size: 1rem;
   display: inline-block;
@@ -24,7 +24,7 @@
   padding: 0.5%;
    width: 580px;              /* when top=580 left =700 */
   height: auto;
-  background-color: #09F;
+  background-color: #01c5c4;
   border-radius: 20px;
 }
 a{
