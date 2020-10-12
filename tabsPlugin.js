@@ -35,18 +35,18 @@
 
         //Tab-nav location
         if(float==="top"){
-          $("#tabs").css("width",width.toString());
+          $(this).css("width",width.toString());
           $(".tab-content").css("width",width.toString());
           $("#tab-nav").css({"margin":"0","padding":"0","float":"none","display":"block","max-width":"none"});
           $("#tabs-content").css({"float":"none"});
         }
         else if(float==="left"){
-          $("#tabs").css("width",width.toString());
+          $(this).css("width",width.toString());
           $("#tab-nav").css({"margin":"0","padding":"0","float":"left","display":"inline-block","max-width":"120px"});
           $("#tabs-content").css({"float":"right","width":(width-120).toString()});
         }
         else if(float==="right"){
-          $("#tabs").css("width",width.toString());
+          $(this).css("width",width.toString());
           $("#tab-nav").css({"margin":"0","padding":"0","float":"right","display":"inline-block","max-width":"120px"});
           $("#tabs-content").css({"float":"left","width":(width-120).toString()});
         }
