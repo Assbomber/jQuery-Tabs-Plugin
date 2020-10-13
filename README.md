@@ -13,7 +13,11 @@ A single method that creates all that is required. Below are bunch of parameters
 | (Array<String>) tabContents  | expects and array of content. Remember to parse HTML as a string incase using HTML as content |
 | (boolean) userTabSwitchEnabled  | defines the plugin whether the end user is allowed to switch tabs |
 | (String) float  | defines the location of tab navigator. Accepted values: "top","left","right". By default is set to "top" |
-| (int) width  | defines the max width |
+| (int) width  | defines the min width. Default is set to "580px" |
+| (int) height  | defines the min height. Default is set to "auto" |
+| (String) backgroundColor  | defines the background-color property. Default is set to "#01c5c4" (turquoisy)|
+| (String) contentBackgroundColor  | defines the background-color property for content section. Default is set to "white" |
+| (double) padding | sets the padding. Default is set to 0.5% |
 
 ### next()
 Jump to next tab.
