@@ -1,14 +1,18 @@
 (function($) {
   var itemsCount = 0;
   var currentActiveTab = 0;
-  //-----------------------------------------------------------------------  Initializing Tabs
+  //-----------------------------------------------------------------------  Initializing Tabs$(this).css({"width":width.toString(),"background-color":backgroundColor});
   $.fn.formTab = function({
+    padding=0.5,
+    backgroundColor="#01c5c4",
     width=580,
+    height="auto",
     float="top",
     count,
     tabs,
     tabContents,
-    userTabSwitchEnabled = true
+    contentBackgroundColor="white",
+    userTabSwitchEnabled = true,
   }) {
     itemsCount = tabs.length;
     if (count !== tabs.length) {
@@ -20,7 +24,7 @@
         // Initializing tabs navigation(class=active,id=tab1)
         $(this).prepend("<ul id='tab-nav'></ul>");
         for (var i = 0; i < tabs.length; i++) {
-          $("#tab-nav").append("<li id=tab-" + i + " class='active'><a id=tab" + i + " href=\"#tab" + i + "-content\">" + tabs[i] + "</a></li>");
+          $("#tab-nav").append("<li id=tab-" + i + " class='active'><a style='text-decoration: none;' id=tab" + i + " href=\"#tab" + i + "-content\">" + tabs[i] + "</a></li>");
         }
         // Initializing tabs contents(id=tab1-content,class="tab-content")
         $(this).append("<div id='tabs-content'></div>");
@@ -35,18 +39,20 @@
 
         //Tab-nav location
         if(float==="top"){
-          $(this).css("width",width.toString());
-          $(".tab-content").css("width",width.toString());
+          $(this).css({"width":width.toString(),"height":height,"background-color":backgroundColor,"padding":padding+"%","display":"inline-block"});
+          $(".tab-content").css({"width":width.toString(),"background-color":contentBackgroundColor});
           $("#tab-nav").css({"margin":"0","padding":"0","float":"none","display":"block","max-width":"none"});
           $("#tabs-content").css({"float":"none"});
         }
         else if(float==="left"){
-          $(this).css("width",width.toString());
+          $(this).css({"width":width.toString(),"height":height,"background-color":backgroundColor,"padding":padding+"%","display":"inline-block"});
+          $(".tab-content").css({"background-color":contentBackgroundColor});
           $("#tab-nav").css({"margin":"0","padding":"0","float":"left","display":"inline-block","max-width":"120px"});
-          $("#tabs-content").css({"float":"right","width":(width-120).toString()});
+          $("#tabs-content").css({"float":"right","width":(width-120).toString(),});
         }
         else if(float==="right"){
-          $(this).css("width",width.toString());
+          $(this).css({"width":width.toString(),"height":height,"background-color":backgroundColor,"padding":padding+"%","display":"inline-block"});
+            $(".tab-content").css({"background-color":contentBackgroundColor});
           $("#tab-nav").css({"margin":"0","padding":"0","float":"right","display":"inline-block","max-width":"120px"});
           $("#tabs-content").css({"float":"left","width":(width-120).toString()});
         }
