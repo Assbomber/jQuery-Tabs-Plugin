@@ -1,4 +1,11 @@
-$("#tabs").formTab({count:3,tabs:["Tab 1","Tab 2","Tab 3"],userTabSwitchEnabled:true,float:"top",width:600,tabContents:[
+$("#tabs").formTab({contentBackgroundColor:"pink",
+  padding:2,
+  backgroundColor:"red",
+  count:3,
+  tabs:["TAB 1","TAB 2","TAB 3"],
+  float:"top",
+  width:"700",
+  height:"auto",tabContents:[
   "<h1>This is tab 1 content</h1>"+
   "<img src=\"https://4.img-dpreview.com/files/p/E~TS590x0~articles/3925134721/0266554465.jpeg\" width=100%>"+
   "<p>This is the sample text. Is nothing but a waste of time....hehe..just to showcase the plugin</p>",
