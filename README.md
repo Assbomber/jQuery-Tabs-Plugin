@@ -39,11 +39,14 @@ Create a div and provide it an id.
 Call the formTab() using your div id and provide it required parameters.
 ```sh
 $("$tabs").formTab({
+     contentBackgroundColor:"pink",
+     padding:2,
+     backgroundColor:"red",
      count:3,
-     tabs:["Tab 1","Tab 2","Tab 3"],
-     userTabSwitchEnabled:true,
-     float:"top",
-     width:600,
+     tabs:["TAB 1","TAB 2","TAB 3"],
+     float:"bottom",
+     width:"auto",
+     height:"auto",
      tabContents:[
           "<h1>This is tab 1 content</h1>"+
           "<img src=\"https://4.img-dpreview.com/files/p/E~TS590x0~articles/3925134721/0266554465.jpeg\" width=100%>"+
@@ -66,7 +69,6 @@ Assign any required element the functionality of next() or previous()
 
 ```sh
 $("button").click(function(){
-  console.log("called");
   $("#tabs").previous();
 })
 
