@@ -44,7 +44,7 @@ $("$tabs").formTab({
      backgroundColor:"red",
      count:3,
      tabs:["TAB 1","TAB 2","TAB 3"],
-     float:"bottom",
+     float:"top",
      width:"auto",
      height:"auto",
      tabContents:[
